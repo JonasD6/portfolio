@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Over mij | Mijn Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#E6E89C] text-black font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-black text-white">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="font-bold">Mijn Portfolio</h1>
+      <div class="space-x-6">
+        <a href="index.html">Home</a>
+        <a href="about.html">Over mij</a>
+        <a href="projects.html">Projecten</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="py-24 bg-[#D6DB7C]">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- LINKS -->
+      <div class="text-center">
+        <img src="assets/profile.jpg"
+          class="w-64 h-64 object-cover rounded-full border-8 border-[#C9B037] shadow-lg mx-auto mb-6">
+
+        <h1 class="text-3xl font-bold mb-2">
+          JONAS DUERINCK
+        </h1>
+
+        <p class="font-semibold text-lg">
+          Toekomstig IT-professional
+        </p>
+      </div>
+
+      <!-- RECHTS -->
+      <div class="text-center md:text-left bg-[#E6E89C] p-6 rounded shadow">
+
+        <h2 class="text-2xl font-bold mb-4">Over mij</h2>
+
+        <p class="text-gray-800 mb-4">
+          Ik ben Jonas, een gemotiveerde IT-student met een passie voor webdevelopment,
+          technologie en innovatie.
+        </p>
+
+        <p class="text-gray-800 mb-4">
+          In mijn vrije tijd speel ik graag voetbal, wat mij helpt om actief en
+          gedisciplineerd te blijven.
+        </p>
+
+        <p class="text-gray-800 mb-6">
+          In het weekend breng ik graag tijd door met vrienden. Daarnaast ga ik ook graag samen met hen op pad met de
+          koersfiets.
+        </p>
+
+        <!-- DOWNLOAD BUTTON -->
+        <a href="assets/cv.pdf" download class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-[#C9B037] font-semibold
+           hover:bg-[#D6DB7C] transition mb-8">
+          <i class="fas fa-download"></i>
+          Download CV
+        </a>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-6">Soft Skills</h3>
+
+          <div class="flex flex-wrap justify-center gap-8">
+
+            <!-- Teamwork -->
+            <div class="flex flex-col items-center">
+              <div class="relative w-24 h-24">
+                <svg class="w-full h-full rotate-[-90deg]">
+                  <circle cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
+                  <circle cx="50%" cy="50%" r="40" stroke="#C9B037" stroke-width="8" fill="none" stroke-dasharray="251"
+                    stroke-dashoffset="25" />
+                </svg>
+              </div>
+              <p class="mt-2 text-sm">Teamwork</p>
+            </div>
+
+            <!-- Flexibiliteit -->
+            <div class="flex flex-col items-center">
+              <div class="relative w-24 h-24">
+                <svg class="w-full h-full rotate-[-90deg]">
+                  <circle cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
+                  <circle cx="50%" cy="50%" r="40" stroke="#C9B037" stroke-width="8" fill="none" stroke-dasharray="251"
+                    stroke-dashoffset="50" />
+                </svg>
+              </div>
+              <p class="mt-2 text-sm">Flexibiliteit</p>
+            </div>
+
+            <!-- Discipline -->
+            <div class="flex flex-col items-center">
+              <div class="relative w-24 h-24">
+                <svg class="w-full h-full rotate-[-90deg]">
+                  <circle cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
+                  <circle cx="50%" cy="50%" r="40" stroke="#C9B037" stroke-width="8" fill="none" stroke-dasharray="251"
+                    stroke-dashoffset="30" />
+                </svg>
+                
+              </div>
+              <p class="mt-2 text-sm">Discipline</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- TIJDLIJN -->
+  <section class="py-20 bg-[#E6E89C]">
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div class="relative">
+
+        <!-- Verticale lijn -->
+        <div class="absolute left-1/2 top-0 h-full w-1 bg-gray-300 -translate-x-1/2"></div>
+
+        <!-- ITEM 1 -->
+        <div class="mb-10 flex justify-between items-center w-full">
+          <div class="w-5/12 text-right">
+            <h3 class="font-bold text-lg">2024 - 2027</h3>
+            <p class="text-gray-700">Artificial Intelligence & Application Development</p>
+            <p class="text-gray-700">Thomas More Geel</p>
+          </div>
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="w-5/12"></div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="mb-10 flex justify-between items-center w-full">
+          <div class="w-5/12"></div>
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <div class="w-5/12">
+            <h3 class="font-bold text-lg">2024</h3>
+            <p class="text-gray-700">Begonnen met studentenjob als pizzamaker</p>
+            <p class="text-gray-700">Mangia Poederlee</p>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="mb-10 flex justify-between items-center w-full">
+          <div class="w-5/12 text-right">
+            <h3 class="font-bold text-lg">2018 - 2024</h3>
+            <p class="text-gray-700">TSO Boekhouden-Informatica</p>
+            <p class="text-gray-700">Kardinaal Van Roey Instituut Vorselaar</p>
+          </div>
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="w-5/12"></div>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="mb-10 flex justify-between items-center w-full">
+          <div class="w-5/12"></div>
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <i class="fas fa-futbol"></i>
+          </div>
+          <div class="w-5/12">
+            <h3 class="font-bold text-lg">2014</h3>
+            <p class="text-gray-700">Begonnen met voetbal</p>
+            <p class="text-gray-700">KVC Lille United</p>
+          </div>
+        </div>
+
+        <!-- ITEM 5 -->
+        <div class="mb-5 flex justify-between items-center w-full">
+          <div class="w-5/12 text-right">
+            <h3 class="font-bold text-lg">2006</h3>
+            <p class="text-gray-700">Geboren op 11 april 2006</p>
+          </div>
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+            <i class="fas fa-baby"></i>
+          </div>
+          <div class="w-5/12"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6 mt-20">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+
+      <p class="text-sm">© 2026 Jonas Duerinck</p>
+
+      <div class="flex gap-4 text-xl">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/jonas.duerinck06/" target="_blank" class="hover:text-yellow-400 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/jonas-duerinck-3267ba331/" target="_blank"
+          class="hover:text-yellow-400 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>

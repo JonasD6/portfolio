@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projecten | Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-[#E6E89C] text-black font-sans min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="bg-black text-white">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="font-bold">Mijn Portfolio</h1>
+      <div class="space-x-6">
+        <a href="index.html">Home</a>
+        <a href="about.html">Over mij</a>
+        <a href="projects.html">Projecten</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="flex-grow flex">
+
+    <!-- PROJECT SECTION -->
+    <section class="bg-gray-100 w-full">
+
+      <!-- Titel -->
+      <h2 class="text-3xl font-bold text-center mb-10 mt-10">
+        Projecten
+      </h2>
+
+      <!-- Grid full width -->
+      <div class="w-full px-6">
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <div class="bg-[#E6E89C] shadow rounded p-6 text-center">
+            <i class="fas fa-code text-3xl mb-4"></i>
+            <h5 class="font-bold mb-2">Project 1</h5>
+            <p class="text-gray-600">Frontend webproject.</p>
+          </div>
+
+          <div class="bg-[#E6E89C] shadow rounded p-6 text-center">
+            <i class="fas fa-robot text-3xl mb-4"></i>
+            <h5 class="font-bold mb-2">Project 2</h5>
+            <p class="text-gray-600">AI / Machine Learning project.</p>
+          </div>
+
+          <div class="bg-[#E6E89C] shadow rounded p-6 text-center">
+            <i class="fas fa-gears text-3xl mb-4"></i>
+            <h5 class="font-bold mb-2">Project 3</h5>
+            <p class="text-gray-600">Backend API applicatie.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6 mt-20">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+
+      <p class="text-sm">© 2026 Jonas Duerinck</p>
+
+      <div class="flex gap-4 text-xl">
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/jonas.duerinck06/" target="_blank" class="hover:text-yellow-400 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/jonas-duerinck-3267ba331/" target="_blank"
+          class="hover:text-yellow-400 transition">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
