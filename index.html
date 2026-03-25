@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Mijn Portfolio</title>
+  <title>Home | Portfolio</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -29,6 +29,10 @@
     <section class="bg-[#D6DB7C] py-20">
       <div class="max-w-6xl mx-auto px-6 text-center">
 
+        <div class="mb-6 flex justify-center">
+          <img src="assets/profile.jpg" class="w-40 h-40 object-cover rounded-full border-4 border-black shadow">
+        </div>
+
         <h1 class="text-5xl font-bold mb-6">
           Welkom op mijn <span class="text-black">E-Portfolio</span>
         </h1>
@@ -44,6 +48,64 @@
           <a href="about.html"
             class="px-6 py-3 bg-black text-white rounded-full hover:bg-white hover:text-black transition">
             Ontdek meer over mij
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <!-- FAVORIETE PROJECTEN -->
+    <section class="py-20 bg-[#E6E89C]">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+
+        <h2 class="text-3xl font-bold mb-10">
+          Mijn favoriete projecten
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <!-- Project 1 -->
+          <div class="bg-[#D6DB7C] p-6 rounded shadow">
+            <i class="fas fa-shirt text-3xl mb-4"></i>
+            <h3 class="font-bold text-xl mb-2">VONQ Webshop</h3>
+            <p class="text-gray-700 mb-4">
+              Een zelf ontwikkelde webshop in Laravel waar ik mijn eigen kledingmerk VONQ verkoop.
+            </p>
+            <a href="projects.html" class="text-black font-semibold underline">
+              Lees meer →
+            </a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-[#D6DB7C] p-6 rounded shadow">
+            <i class="fas fa-brain text-3xl mb-4"></i>
+            <h3 class="font-bold text-xl mb-2">AI Voorspellingsmodel</h3>
+            <p class="text-gray-700 mb-4">
+              Machine learning model dat voorspelt of een auto binnen 30 dagen defect raakt.
+            </p>
+            <a href="projects.html" class="text-black font-semibold underline">
+              Lees meer →
+            </a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-[#D6DB7C] p-6 rounded shadow">
+            <i class="fas fa-box text-3xl mb-4"></i>
+            <h3 class="font-bold text-xl mb-2">Slimme Brievenbus</h3>
+            <p class="text-gray-700 mb-4">
+              IoT-brievenbus met camera en sensoren die automatisch opent en meldingen verstuurt.
+            </p>
+            <a href="projects.html" class="text-black font-semibold underline">
+              Lees meer →
+            </a>
+          </div>
+
+        </div>
+
+        <!-- knop naar alle projecten -->
+        <div class="mt-10">
+          <a href="projects.html"
+            class="px-6 py-3 bg-black text-white rounded-full hover:bg-white hover:text-black transition">
+            Bekijk alle projecten
           </a>
         </div>
 

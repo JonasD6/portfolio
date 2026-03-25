@@ -7,7 +7,6 @@
   <title>Projecten | Portfolio</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -25,67 +24,166 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="flex-grow flex">
+  <!-- CONTENT -->
+  <main class="flex-grow">
 
-    <!-- PROJECT SECTION -->
-    <section class="bg-gray-100 w-full">
+    <h2 class="text-4xl font-bold text-center mt-10 mb-16">
+      Mijn Projecten
+    </h2>
 
-      <!-- Titel -->
-      <h2 class="text-3xl font-bold text-center mb-10 mt-10">
-        Projecten
-      </h2>
+    <div class="max-w-5xl mx-auto px-6 space-y-20">
 
-      <!-- Grid full width -->
-      <div class="w-full px-6">
-        <div class="grid md:grid-cols-3 gap-6">
+      <!-- PROJECT 1 -->
+      <div class="bg-[#D6DB7C] p-8 rounded shadow">
 
-          <div class="bg-[#E6E89C] shadow rounded p-6 text-center">
-            <i class="fas fa-code text-3xl mb-4"></i>
-            <h5 class="font-bold mb-2">Project 1</h5>
-            <p class="text-gray-600">Frontend webproject.</p>
-          </div>
+        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <i class="fas fa-shirt"></i> VONQ Webshop
+        </h3>
 
-          <div class="bg-[#E6E89C] shadow rounded p-6 text-center">
-            <i class="fas fa-robot text-3xl mb-4"></i>
-            <h5 class="font-bold mb-2">Project 2</h5>
-            <p class="text-gray-600">AI / Machine Learning project.</p>
-          </div>
+        <!-- Carousel -->
+        <div class="relative mb-6">
+          <img id="carousel1" src="assets/project1-1.jpg"
+            class="w-full h-64 object-cover rounded">
 
-          <div class="bg-[#E6E89C] shadow rounded p-6 text-center">
-            <i class="fas fa-gears text-3xl mb-4"></i>
-            <h5 class="font-bold mb-2">Project 3</h5>
-            <p class="text-gray-600">Backend API applicatie.</p>
-          </div>
+          <button onclick="prevSlide(1)"
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black text-white px-3 py-1 rounded">
+            ‹
+          </button>
 
+          <button onclick="nextSlide(1)"
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white px-3 py-1 rounded">
+            ›
+          </button>
         </div>
+
+        <p class="mb-3">
+          Een volledige webshop ontwikkeld in Laravel voor mijn eigen kledingmerk VONQ.
+          Gebruikers kunnen producten bekijken, toevoegen aan hun winkelmandje en aankopen doen. 
+          De site is wel niet meer gehost.
+        </p>
+
+        <ul class="list-disc ml-5">
+          <li>Laravel, PHP, Tailwind</li>
+          <li>Login & winkelmand systeem</li>
+          <li>Productbeheer via database</li>
+        </ul>
+
       </div>
 
-    </section>
+      <!-- PROJECT 2 -->
+      <div class="bg-[#D6DB7C] p-8 rounded shadow">
+
+        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <i class="fas fa-brain"></i> AI Voorspellingsmodel
+        </h3>
+
+        <!-- Carousel -->
+        <div class="relative mb-6">
+          <img id="carousel2" src="assets/project2-1.jpg"
+            class="w-full h-64 object-cover rounded">
+
+          <button onclick="prevSlide(2)"
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black text-white px-3 py-1 rounded">
+            ‹
+          </button>
+
+          <button onclick="nextSlide(2)"
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white px-3 py-1 rounded">
+            ›
+          </button>
+        </div>
+
+        <p class="mb-3">
+          Machine learning model dat voorspelt of een auto binnen 30 dagen defect raakt.
+        </p>
+
+        <ul class="list-disc ml-5">
+          <li>Python & Scikit-learn</li>
+          <li>Random Forest (bagging)</li>
+          <li>Conclusion matrix</li>
+        </ul>
+
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="bg-[#D6DB7C] p-8 rounded shadow">
+
+        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+          <i class="fas fa-box"></i> Slimme Brievenbus
+        </h3>
+
+        <!-- Carousel -->
+        <div class="relative mb-6">
+          <img id="carousel3" src="assets/project3-1.jpg"
+            class="w-full h-64 object-cover rounded">
+
+          <button onclick="prevSlide(3)"
+            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black text-white px-3 py-1 rounded">
+            ‹
+          </button>
+
+          <button onclick="nextSlide(3)"
+            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black text-white px-3 py-1 rounded">
+            ›
+          </button>
+        </div>
+
+        <p class="mb-3">
+          IoT-brievenbus die automatisch opent via camera detectie.
+          Met een lichtsensor wordt gecontroleerd of er een pakket aanwezig is.
+        </p>
+
+        <ul class="list-disc ml-5">
+          <li>IoT + AI integratie</li>
+          <li>BH1750 lichtsensor</li>
+          <li>Notificaties & reclamefilter</li>
+        </ul>
+
+      </div>
+
+    </div>
   </main>
 
   <!-- Footer -->
   <footer class="bg-black text-white py-6 mt-20">
     <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-
       <p class="text-sm">© 2026 Jonas Duerinck</p>
 
       <div class="flex gap-4 text-xl">
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/jonas.duerinck06/" target="_blank" class="hover:text-yellow-400 transition">
+        <a href="https://www.instagram.com/jonas.duerinck06/" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
-
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/jonas-duerinck-3267ba331/" target="_blank"
-          class="hover:text-yellow-400 transition">
+        <a href="https://www.linkedin.com/in/jonas-duerinck-3267ba331/" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
-
     </div>
   </footer>
 
-</body>
+  <!-- CAROUSEL SCRIPT -->
+  <script>
+    const images = {
+      1: ["assets/project1-1.jpg", "assets/project1-2.jpg", "assets/project1-3.jpg"],
+      2: ["assets/project2-1.jpg", "assets/project2-2.jpg"],
+      3: ["assets/project3-1.jpg", "assets/project3-2.jpg"]
+    };
 
+    const index = { 1: 0, 2: 0, 3: 0 };
+
+    function showSlide(project) {
+      document.getElementById("carousel" + project).src = images[project][index[project]];
+    }
+
+    function nextSlide(project) {
+      index[project] = (index[project] + 1) % images[project].length;
+      showSlide(project);
+    }
+
+    function prevSlide(project) {
+      index[project] = (index[project] - 1 + images[project].length) % images[project].length;
+      showSlide(project);
+    }
+  </script>
+
+</body>
 </html>
