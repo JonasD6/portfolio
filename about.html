@@ -20,95 +20,115 @@
   <nav class="bg-black text-white">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
       <h1 class="font-bold">Mijn Portfolio</h1>
-      <div class="space-x-6">
-        <a href="index.html">Home</a>
-        <a href="about.html">Over mij</a>
-        <a href="projects.html">Projecten</a>
+      <div class="flex items-center gap-6">
+        <div class="space-x-6">
+          <a href="index.html">Home</a>
+          <a href="about.html">Over mij</a>
+          <a href="projects.html">Projecten</a>
+        </div>
+        <button class="language-toggle" id="langToggle" aria-label="Toggle between Dutch and English">
+          <span id="langText">EN</span>
+          <script>document.getElementById('langText').textContent = (localStorage.getItem('portfolio-language') || 'nl') === 'nl' ? 'NL' : 'EN';</script>
+        </button>
+        <label class="theme-switch" for="themeToggle" aria-label="Wissel tussen light en dark mode">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider">
+            <i id="themeIcon" class="theme-icon fas fa-sun"></i>
+          </span>
+        </label>
       </div>
     </div>
   </nav>
 
   <!-- HERO SECTION -->
-  <section class="py-24 bg-[#D6DB7C]">
+  <section class="py-24 bg-[#D6DB7C] panel-primary">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
       <!-- LINKS -->
       <div class="text-center">
         <img src="assets/profile.jpg"
-          class="w-64 h-64 object-cover rounded-full border-8 border-[#C9B037] shadow-lg mx-auto mb-6">
+          class="w-64 h-64 object-cover rounded-full border-8 border-black profile-photo shadow-lg mx-auto mb-4">
 
-        <h1 class="text-3xl font-bold mb-2">
+        <h1 class="text-3xl font-bold mb-8" data-translate="about.hero.title">
           JONAS DUERINCK
         </h1>
+
+        <!-- WAAROM IT SECTIE -->
+        <div class="bg-[#E6E89C] panel-secondary p-6 rounded shadow">
+          <h3 class="text-2xl font-bold mb-4" data-translate="about.why.title">Waarom IT?</h3>
+          <p class="text-gray-800" data-translate="about.why.description">
+            Ik heb interesse in technologie en hoe het onze wereld verandert. Ik werk graag ideeën uit en zet ze om in iets concreets. Daarnaast hou ik ervan om problemen op te lossen en praktische oplossingen te bedenken. In IT kan ik blijven leren en mezelf verder ontwikkelen.
+          </p>
+        </div>
       </div>
 
       <!-- RECHTS -->
-      <div class="text-center md:text-left bg-[#E6E89C] p-6 rounded shadow">
+      <div class="text-center md:text-left bg-[#E6E89C] panel-secondary p-6 rounded shadow">
 
-        <h2 class="text-2xl font-bold mb-4">Over mij</h2>
+        <h2 class="text-2xl font-bold mb-4" data-translate="about.hero.subtitle">Over mij</h2>
 
-        <p class="text-gray-800 mb-4">
+        <p class="text-gray-800 mb-4" data-translate="about.bio.p1">
           Ik ben Jonas, een gemotiveerde IT-student met een passie voor webdevelopment,
           technologie en innovatie.
         </p>
 
-        <p class="text-gray-800 mb-4">
-          Ik speel voetbal bij KVC Lille United en werk in het weekend bij Mangia, waar ik pizza’s maak.
+        <p class="text-gray-800 mb-4" data-translate="about.bio.p2">
+          Ik speel voetbal bij KVC Lille United en werk in het weekend bij Mangia, waar ik pizza's maak.
         </p>
 
-        <p class="text-gray-800 mb-6">
+        <p class="text-gray-800 mb-6" data-translate="about.bio.p3">
           In mijn vrije tijd breng ik graag tijd door met mijn vriendin, ga ik regelmatig met mijn vrienden fietsen op
           de koersfiets
           en reis ik graag om nieuwe plaatsen te ontdekken.
         </p>
 
         <!-- DOWNLOAD BUTTON -->
-        <a href="assets/cv.pdf" download class="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-[#C9B037] font-semibold
-           hover:bg-[#D6DB7C] transition mb-8">
+        <a href="assets/cv.pdf" download class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black text-white cv-button font-semibold
+           hover:bg-white hover:text-black transition mb-8" data-translate="about.cv.button">
           <i class="fas fa-download"></i>
           Download CV
         </a>
 
         <div>
-          <h3 class="text-xl font-semibold mb-6">Soft Skills</h3>
+          <h3 class="text-xl font-semibold mb-6" data-translate="about.skills">Soft Skills</h3>
 
           <div class="flex flex-wrap justify-center gap-8">
 
             <!-- Teamwork -->
             <div class="flex flex-col items-center">
               <div class="relative w-24 h-24">
-                <svg class="w-full h-full rotate-[-90deg]">
-                  <circle cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
-                  <circle cx="50%" cy="50%" r="40" stroke="#C9B037" stroke-width="8" fill="none" stroke-dasharray="251"
+                <svg class="w-full h-full rotate-[-90deg] skill-ring">
+                  <circle class="ring-track" cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
+                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none" stroke-dasharray="251"
                     stroke-dashoffset="25" />
                 </svg>
               </div>
-              <p class="mt-2 text-sm">Teamwork</p>
+              <p class="mt-2 text-sm" data-translate="about.skill.teamwork">Teamwork</p>
             </div>
 
             <!-- Flexibiliteit -->
             <div class="flex flex-col items-center">
               <div class="relative w-24 h-24">
-                <svg class="w-full h-full rotate-[-90deg]">
-                  <circle cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
-                  <circle cx="50%" cy="50%" r="40" stroke="#C9B037" stroke-width="8" fill="none" stroke-dasharray="251"
+                <svg class="w-full h-full rotate-[-90deg] skill-ring">
+                  <circle class="ring-track" cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
+                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none" stroke-dasharray="251"
                     stroke-dashoffset="50" />
                 </svg>
               </div>
-              <p class="mt-2 text-sm">Flexibiliteit</p>
+              <p class="mt-2 text-sm" data-translate="about.skill.flexibility">Flexibiliteit</p>
             </div>
 
             <!-- Discipline -->
             <div class="flex flex-col items-center">
               <div class="relative w-24 h-24">
-                <svg class="w-full h-full rotate-[-90deg]">
-                  <circle cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
-                  <circle cx="50%" cy="50%" r="40" stroke="#C9B037" stroke-width="8" fill="none" stroke-dasharray="251"
+                <svg class="w-full h-full rotate-[-90deg] skill-ring">
+                  <circle class="ring-track" cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
+                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none" stroke-dasharray="251"
                     stroke-dashoffset="30" />
                 </svg>
 
               </div>
-              <p class="mt-2 text-sm">Discipline</p>
+              <p class="mt-2 text-sm" data-translate="about.skill.discipline">Discipline</p>
             </div>
 
           </div>
@@ -118,7 +138,7 @@
   </section>
 
   <!-- TIJDLIJN -->
-  <section class="py-20 bg-[#E6E89C]">
+  <section class="py-20 bg-[#E6E89C] panel-secondary">
     <div class="max-w-5xl mx-auto px-6">
 
       <div class="relative">
@@ -129,9 +149,9 @@
         <!-- ITEM 1 -->
         <div class="mb-10 flex justify-between items-center w-full">
           <div class="w-5/12 text-right">
-            <h3 class="font-bold text-lg">2024 - 2027</h3>
-            <p class="text-gray-700">Artificial Intelligence & Application Development</p>
-            <p class="text-gray-700">Thomas More Geel</p>
+            <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle1">2024 - 2027</h3>
+            <p class="text-gray-700" data-translate="about.timeline.title1">Artificial Intelligence & Application Development</p>
+            <p class="text-gray-700" data-translate="about.timeline.org1">Thomas More Geel</p>
           </div>
           <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-graduation-cap"></i>
@@ -146,18 +166,18 @@
             <i class="fas fa-briefcase"></i>
           </div>
           <div class="w-5/12">
-            <h3 class="font-bold text-lg">2024</h3>
-            <p class="text-gray-700">Begonnen met studentenjob als pizzamaker</p>
-            <p class="text-gray-700">Mangia Poederlee</p>
+            <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle2">2024</h3>
+            <p class="text-gray-700" data-translate="about.timeline.title2">Begonnen met studentenjob als pizzamaker</p>
+            <p class="text-gray-700" data-translate="about.timeline.org2">Mangia Poederlee</p>
           </div>
         </div>
 
         <!-- ITEM 3 -->
         <div class="mb-10 flex justify-between items-center w-full">
           <div class="w-5/12 text-right">
-            <h3 class="font-bold text-lg">2018 - 2024</h3>
-            <p class="text-gray-700">TSO Boekhouden-Informatica</p>
-            <p class="text-gray-700">Kardinaal Van Roey Instituut Vorselaar</p>
+            <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle3">2018 - 2024</h3>
+            <p class="text-gray-700" data-translate="about.timeline.title3">TSO Boekhouden-Informatica</p>
+            <p class="text-gray-700" data-translate="about.timeline.org3">Kardinaal Van Roey Instituut Vorselaar</p>
           </div>
           <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-school"></i>
@@ -172,17 +192,17 @@
             <i class="fas fa-futbol"></i>
           </div>
           <div class="w-5/12">
-            <h3 class="font-bold text-lg">2014</h3>
-            <p class="text-gray-700">Begonnen met voetbal</p>
-            <p class="text-gray-700">KVC Lille United</p>
+            <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle4">2014</h3>
+            <p class="text-gray-700" data-translate="about.timeline.title4">Begonnen met voetbal</p>
+            <p class="text-gray-700" data-translate="about.timeline.org4">KVC Lille United</p>
           </div>
         </div>
 
         <!-- ITEM 5 -->
         <div class="mb-5 flex justify-between items-center w-full">
           <div class="w-5/12 text-right">
-            <h3 class="font-bold text-lg">2006</h3>
-            <p class="text-gray-700">Geboren op 11 april 2006</p>
+            <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle5">2006</h3>
+            <p class="text-gray-700" data-translate="about.timeline.title5">Geboren op 11 april 2006</p>
           </div>
           <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-baby"></i>
@@ -195,15 +215,16 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-white py-6 mt-20">
+  <footer class="bg-black text-white py-6">
     <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
 
-      <p class="text-sm">© 2026 Jonas Duerinck</p>
+      <p class="text-sm" data-translate="footer.copyright">© 2026 Jonas Duerinck</p>
 
       <div class="flex gap-4 text-xl">
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/jonas.duerinck06/" target="_blank" class="hover:text-yellow-400 transition">
-          <i class="fab fa-instagram"></i>
+        <!-- GitHub -->
+        <a href="https://github.com/JonasD6?tab=overview&from=2026-03-01&to=2026-03-30" target="_blank"
+          class="hover:text-yellow-400 transition">
+          <i class="fab fa-github"></i>
         </a>
 
         <!-- LinkedIn -->
@@ -215,6 +236,10 @@
 
     </div>
   </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/chatbot.js"></script>
 </body>
 
 </html>

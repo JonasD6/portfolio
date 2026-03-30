@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="nl">
 
+<!-- Light mode toevoegen,
+ waarom it gekozen?,
+ instagram veranderen door github,
+ nederlands en engels toevoegen,
+ ai toevoegen
+  -->
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Portfolio</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -15,10 +23,22 @@
   <nav class="bg-black text-white">
     <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
       <h1 class="font-bold">Mijn Portfolio</h1>
-      <div class="space-x-6">
-        <a href="index.html">Home</a>
-        <a href="about.html">Over mij</a>
-        <a href="projects.html">Projecten</a>
+      <div class="flex items-center gap-6">
+        <div class="space-x-6">
+          <a href="index.html">Home</a>
+          <a href="about.html">Over mij</a>
+          <a href="projects.html">Projecten</a>
+        </div>
+        <button class="language-toggle" id="langToggle" aria-label="Toggle between Dutch and English">
+          <span id="langText">EN</span>
+          <script>document.getElementById('langText').textContent = (localStorage.getItem('portfolio-language') || 'nl') === 'nl' ? 'NL' : 'EN';</script>
+        </button>
+        <label class="theme-switch" for="themeToggle" aria-label="Wissel tussen light en dark mode">
+          <input type="checkbox" id="themeToggle">
+          <span class="slider">
+            <i id="themeIcon" class="theme-icon fas fa-sun"></i>
+          </span>
+        </label>
       </div>
     </div>
   </nav>
@@ -26,18 +46,18 @@
   <main class="flex-grow">
 
     <!-- HERO BLOK -->
-    <section class="bg-[#D6DB7C] py-20">
+    <section class="bg-[#D6DB7C] panel-primary py-20">
       <div class="max-w-6xl mx-auto px-6 text-center">
 
         <div class="mb-6 flex justify-center">
-          <img src="assets/profile.jpg" class="w-40 h-40 object-cover rounded-full border-4 border-black shadow">
+          <img src="assets/profile.jpg" class="w-40 h-40 object-cover rounded-full border-4 border-white shadow">
         </div>
 
         <h1 class="text-5xl font-bold mb-6">
-          Welkom op mijn <span class="text-black">E-Portfolio</span>
+          <span data-translate="index.title">Welkom op mijn E-Portfolio</span>
         </h1>
 
-        <p class="text-lg max-w-2xl mx-auto text-gray-800">
+        <p class="text-lg max-w-2xl mx-auto text-gray-800" data-translate="index.subtitle">
           Dit is mijn persoonlijke portfolio waar ik mijn projecten,
           vaardigheden en persoonlijke ontwikkeling voorstel.
           Hier kan je meer ontdekken over wie ik ben,
@@ -46,7 +66,7 @@
 
         <div class="mt-8">
           <a href="about.html"
-            class="px-6 py-3 bg-black text-white rounded-full hover:bg-white hover:text-black transition">
+            class="px-6 py-3 bg-black text-white rounded-full hover:bg-white hover:text-black transition" data-translate="index.cta">
             Ontdek meer over mij
           </a>
         </div>
@@ -54,38 +74,38 @@
       </div>
     </section>
     <!-- FAVORIETE PROJECTEN -->
-    <section class="py-20 bg-[#E6E89C]">
+    <section class="py-20 bg-[#E6E89C] panel-secondary">
       <div class="max-w-6xl mx-auto px-6 text-center">
 
-        <h2 class="text-3xl font-bold mb-10">
+        <h2 class="text-3xl font-bold mb-10" data-translate="index.projects.title">
           Mijn favoriete projecten
         </h2>
 
         <div class="grid md:grid-cols-3 gap-8">
 
           <!-- Project 1 -->
-          <div class="bg-[#D6DB7C] p-6 rounded shadow">
+          <div class="bg-[#D6DB7C] card-surface p-6 rounded shadow">
             <i class="fas fa-shirt text-3xl mb-4"></i>
-            <h3 class="font-bold text-xl mb-2">VONQ Webshop</h3>
-            <p class="text-gray-700 mb-4">
+            <h3 class="font-bold text-xl mb-2" data-translate="index.project1.title">VONQ Webshop</h3>
+            <p class="text-gray-700 mb-4" data-translate="index.project1.desc">
               Een zelf ontwikkelde webshop in Laravel waar ik mijn eigen kledingmerk VONQ verkoop.
             </p>
           </div>
 
           <!-- Project 2 -->
-          <div class="bg-[#D6DB7C] p-6 rounded shadow">
+          <div class="bg-[#D6DB7C] card-surface p-6 rounded shadow">
             <i class="fas fa-brain text-3xl mb-4"></i>
-            <h3 class="font-bold text-xl mb-2">AI Voorspellingsmodel</h3>
-            <p class="text-gray-700 mb-4">
+            <h3 class="font-bold text-xl mb-2" data-translate="index.project2.title">AI Voorspellingsmodel</h3>
+            <p class="text-gray-700 mb-4" data-translate="index.project2.desc">
               Machine learning model dat voorspelt of een auto binnen 30 dagen defect raakt.
             </p>
           </div>
 
           <!-- Project 3 -->
-          <div class="bg-[#D6DB7C] p-6 rounded shadow">
+          <div class="bg-[#D6DB7C] card-surface p-6 rounded shadow">
             <i class="fas fa-box text-3xl mb-4"></i>
-            <h3 class="font-bold text-xl mb-2">Slimme Brievenbus</h3>
-            <p class="text-gray-700 mb-4">
+            <h3 class="font-bold text-xl mb-2" data-translate="index.project3.title">Slimme Brievenbus</h3>
+            <p class="text-gray-700 mb-4" data-translate="index.project3.desc">
               IoT-brievenbus met camera en sensoren die automatisch opent en meldingen verstuurt.
             </p>
           </div>
@@ -95,7 +115,7 @@
         <!-- knop naar alle projecten -->
         <div class="mt-10">
           <a href="projects.html"
-            class="px-6 py-3 bg-black text-white rounded-full hover:bg-white hover:text-black transition">
+            class="px-6 py-3 bg-black text-white rounded-full hover:bg-white hover:text-black transition" data-translate="index.projects.button">
             Bekijk alle projecten
           </a>
         </div>
@@ -105,15 +125,16 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-black text-white py-6 mt-20">
+  <footer class="bg-black text-white py-6">
     <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
 
-      <p class="text-sm">© 2026 Jonas Duerinck</p>
+      <p class="text-sm" data-translate="footer.copyright">© 2026 Jonas Duerinck</p>
 
       <div class="flex gap-4 text-xl">
-        <!-- Instagram -->
-        <a href="https://www.instagram.com/jonas.duerinck06/" target="_blank" class="hover:text-yellow-400 transition">
-          <i class="fab fa-instagram"></i>
+        <!-- GitHub -->
+        <a href="https://github.com/JonasD6?tab=overview&from=2026-03-01&to=2026-03-30" target="_blank"
+          class="hover:text-yellow-400 transition">
+          <i class="fab fa-github"></i>
         </a>
 
         <!-- LinkedIn -->
@@ -125,6 +146,10 @@
 
     </div>
   </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/chatbot.js"></script>
 </body>
 
 </html>
