@@ -15,10 +15,10 @@
 
   <!-- Navbar -->
   <nav class="bg-black text-white">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4 nav-inner">
       <h1 class="font-bold">Mijn Portfolio</h1>
-      <div class="flex items-center gap-6">
-        <div class="space-x-6">
+      <div class="flex items-center gap-6 nav-controls">
+        <div class="space-x-6 nav-links">
           <a href="index.html">Home</a>
           <a href="about.html">Over mij</a>
           <a href="projects.html">Projecten</a>
@@ -40,129 +40,144 @@
   <!-- CONTENT -->
   <main class="flex-grow">
 
-    <h2 class="text-4xl font-bold text-center mt-10 mb-16" data-translate="projects.title">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mt-8 md:mt-10 mb-10 md:mb-16" data-translate="projects.title">
       Mijn Projecten
     </h2>
 
-    <div class="max-w-5xl mx-auto px-6 space-y-20">
+    <div class="max-w-6xl mx-auto px-6 space-y-14 pb-8">
 
       <!-- PROJECT 1 -->
-      <div class="bg-[#D6DB7C] card-surface p-8 rounded shadow" data-project-num="1">
+      <article class="bg-[#D6DB7C] card-surface project-card p-7 md:p-8 rounded-2xl shadow" data-project-num="1">
+        <div class="project-grid">
+          <div class="carousel-shell">
+            <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
+              <img id="carousel1" src="assets/project1-1.png" class="w-full h-full object-contain" alt="Project screenshot VONQ">
 
-        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3" data-translate="projects.project1.title">
-          <i class="fas fa-shirt"></i> VONQ Webshop
-        </h3>
+              <button type="button" onclick="prevSlide(1)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">
+                ‹
+              </button>
 
-        <!-- Carousel -->
-        <div class="relative mb-6 bg-black rounded overflow-hidden h-96 flex items-center justify-center">
-          <img id="carousel1" src="assets/project1-1.png" class="w-full h-full object-contain">
+              <button type="button" onclick="nextSlide(1)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">
+                ›
+              </button>
+            </div>
+            <div class="carousel-meta">
+              <div id="carouselDots1" class="carousel-dots"></div>
+              <span id="carouselCounter1" class="carousel-counter"></span>
+            </div>
+          </div>
 
-          <button onclick="prevSlide(1)"
-            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black text-white px-3 py-1 rounded">
-            ‹
-          </button>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project1.title">
+              <i class="fas fa-shirt"></i> VONQ Webshop
+            </h3>
 
-          <button onclick="nextSlide(1)"
-            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black text-white px-3 py-1 rounded">
-            ›
-          </button>
+            <p class="mb-5" data-translate="projects.project1.desc">
+              Een volledige webshop ontwikkeld in Laravel voor mijn eigen kledingmerk VONQ.
+              Gebruikers kunnen producten bekijken, toevoegen aan hun winkelmandje en aankopen doen.
+              De site is niet langer gehost.
+            </p>
+
+            <ul class="list-disc ml-5 space-y-1.5">
+              <li data-translate-tech="0" data-translate="projects.project1.tech">Laravel, PHP, Tailwind</li>
+              <li data-translate-tech="1" data-translate="projects.project1.tech">Login & winkelmand systeem</li>
+              <li data-translate-tech="2" data-translate="projects.project1.tech">Productbeheer via database</li>
+              <li data-translate-tech="3" data-translate="projects.project1.tech">Admin functies</li>
+              <li data-translate-tech="4" data-translate="projects.project1.tech">Mail functies</li>
+            </ul>
+          </div>
         </div>
-
-        <p class="mb-3" data-translate="projects.project1.desc">
-          Een volledige webshop ontwikkeld in Laravel voor mijn eigen kledingmerk VONQ.
-          Gebruikers kunnen producten bekijken, toevoegen aan hun winkelmandje en aankopen doen.
-          De site is niet langer gehost.
-        </p>
-
-        <ul class="list-disc ml-5">
-          <li data-translate-tech="0" data-translate="projects.project1.tech">Laravel, PHP, Tailwind</li>
-          <li data-translate-tech="1" data-translate="projects.project1.tech">Login & winkelmand systeem</li>
-          <li data-translate-tech="2" data-translate="projects.project1.tech">Productbeheer via database</li>
-          <li data-translate-tech="3" data-translate="projects.project1.tech">Admin functies</li>
-          <li data-translate-tech="4" data-translate="projects.project1.tech">Mail functies</li>
-        </ul>
-
-      </div>
+      </article>
 
       <!-- PROJECT 2 -->
-      <div class="bg-[#D6DB7C] card-surface p-8 rounded shadow" data-project-num="2">
+      <article class="bg-[#D6DB7C] card-surface project-card p-7 md:p-8 rounded-2xl shadow" data-project-num="2">
+        <div class="project-grid">
+          <div class="carousel-shell">
+            <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
+              <img id="carousel2" src="assets/project2-1.png" class="w-full h-full object-contain" alt="Project screenshot AI model">
 
-        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3" data-translate="projects.project2.title">
-          <i class="fas fa-brain"></i> AI Voorspellingsmodel
-        </h3>
+              <button type="button" onclick="prevSlide(2)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">
+                ‹
+              </button>
 
-        <!-- Carousel -->
-        <div class="relative mb-6 bg-black rounded overflow-hidden h-96 flex items-center justify-center">
-          <img id="carousel2" src="assets/project2-1.png" class="w-full h-full object-contain">
+              <button type="button" onclick="nextSlide(2)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">
+                ›
+              </button>
+            </div>
+            <div class="carousel-meta">
+              <div id="carouselDots2" class="carousel-dots"></div>
+              <span id="carouselCounter2" class="carousel-counter"></span>
+            </div>
+          </div>
 
-          <button onclick="prevSlide(2)"
-            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black text-white px-3 py-1 rounded">
-            ‹
-          </button>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project2.title">
+              <i class="fas fa-brain"></i> AI Voorspellingsmodel
+            </h3>
 
-          <button onclick="nextSlide(2)"
-            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black text-white px-3 py-1 rounded">
-            ›
-          </button>
+            <p class="mb-5" data-translate="projects.project2.desc">
+              Machine learning model dat voorspelt of een auto binnen 30 dagen defect raakt.
+            </p>
+
+            <ul class="list-disc ml-5 space-y-1.5">
+              <li data-translate-tech="0" data-translate="projects.project2.tech">Python & Scikit-learn</li>
+              <li data-translate-tech="1" data-translate="projects.project2.tech">Random Forest (bagging)</li>
+              <li data-translate-tech="2" data-translate="projects.project2.tech">Confusion matrix</li>
+              <li data-translate-tech="3" data-translate="projects.project2.tech">Clusters</li>
+            </ul>
+          </div>
         </div>
-
-        <p class="mb-3" data-translate="projects.project2.desc">
-          Machine learning model dat voorspelt of een auto binnen 30 dagen defect raakt.
-        </p>
-
-        <ul class="list-disc ml-5">
-          <li data-translate-tech="0" data-translate="projects.project2.tech">Python & Scikit-learn</li>
-          <li data-translate-tech="1" data-translate="projects.project2.tech">Random Forest (bagging)</li>
-          <li data-translate-tech="2" data-translate="projects.project2.tech">Confusion matrix</li>
-          <li data-translate-tech="3" data-translate="projects.project2.tech">Clusters</li>
-        </ul>
-
-      </div>
+      </article>
 
       <!-- PROJECT 3 -->
-      <div class="bg-[#D6DB7C] card-surface p-8 rounded shadow" data-project-num="3">
+      <article class="bg-[#D6DB7C] card-surface project-card p-7 md:p-8 rounded-2xl shadow" data-project-num="3">
+        <div class="project-grid">
+          <div class="carousel-shell">
+            <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
+              <img id="carousel3" src="assets/project3-1.jpg" class="w-full h-full object-contain" alt="Project screenshot slimme brievenbus">
 
-        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3" data-translate="projects.project3.title">
-          <i class="fas fa-box"></i> Slimme Brievenbus
-        </h3>
+              <button type="button" onclick="prevSlide(3)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">
+                ‹
+              </button>
 
-        <!-- Carousel -->
-        <div class="relative mb-6 bg-black rounded overflow-hidden h-96 flex items-center justify-center">
-          <img id="carousel3" src="assets/project3-1.jpg" class="w-full h-full object-contain">
+              <button type="button" onclick="nextSlide(3)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">
+                ›
+              </button>
+            </div>
+            <div class="carousel-meta">
+              <div id="carouselDots3" class="carousel-dots"></div>
+              <span id="carouselCounter3" class="carousel-counter"></span>
+            </div>
+          </div>
 
-          <button onclick="prevSlide(3)"
-            class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black text-white px-3 py-1 rounded">
-            ‹
-          </button>
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project3.title">
+              <i class="fas fa-box"></i> Slimme Brievenbus
+            </h3>
 
-          <button onclick="nextSlide(3)"
-            class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/70 hover:bg-black text-white px-3 py-1 rounded">
-            ›
-          </button>
+            <p class="mb-5" data-translate="projects.project3.desc">
+              IoT-brievenbus die automatisch opent via camera detectie.
+              Met een lichtsensor wordt gecontroleerd of er een pakket aanwezig is.
+            </p>
+
+            <ul class="list-disc ml-5 space-y-1.5">
+              <li data-translate-tech="0" data-translate="projects.project3.tech">IoT + AI integratie</li>
+              <li data-translate-tech="1" data-translate="projects.project3.tech">BH1750 lichtsensor</li>
+              <li data-translate-tech="2" data-translate="projects.project3.tech">Raspberry Pi</li>
+              <li data-translate-tech="3" data-translate="projects.project3.tech">Orange Pi</li>
+              <li data-translate-tech="4" data-translate="projects.project3.tech">Camera detectie</li>
+              <li>Notificaties & reclamefilter</li>
+            </ul>
+          </div>
         </div>
-
-        <p class="mb-3" data-translate="projects.project3.desc">
-          IoT-brievenbus die automatisch opent via camera detectie.
-          Met een lichtsensor wordt gecontroleerd of er een pakket aanwezig is.
-        </p>
-
-        <ul class="list-disc ml-5">
-          <li data-translate-tech="0" data-translate="projects.project3.tech">IoT + AI integratie</li>
-          <li data-translate-tech="1" data-translate="projects.project3.tech">BH1750 lichtsensor</li>
-          <li data-translate-tech="2" data-translate="projects.project3.tech">Raspberry Pi</li>
-          <li data-translate-tech="3" data-translate="projects.project3.tech">Orange Pi</li>
-          <li data-translate-tech="4" data-translate="projects.project3.tech">Camera detectie</li>
-          <li>Notificaties & reclamefilter</li>
-        </ul>
-
-      </div>
+      </article>
 
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="bg-black text-white py-6 mt-20">
-    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center footer-inner">
       <p class="text-sm" data-translate="footer.copyright">© 2026 Jonas Duerinck</p>
 
       <div class="flex gap-4 text-xl">

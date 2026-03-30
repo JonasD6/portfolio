@@ -18,10 +18,10 @@
 
   <!-- Navbar -->
   <nav class="bg-black text-white">
-    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4 nav-inner">
       <h1 class="font-bold">Mijn Portfolio</h1>
-      <div class="flex items-center gap-6">
-        <div class="space-x-6">
+      <div class="flex items-center gap-6 nav-controls">
+        <div class="space-x-6 nav-links">
           <a href="index.html">Home</a>
           <a href="about.html">Over mij</a>
           <a href="projects.html">Projecten</a>
@@ -41,13 +41,13 @@
   </nav>
 
   <!-- HERO SECTION -->
-  <section class="py-24 bg-[#D6DB7C] panel-primary">
-    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+  <section class="py-14 md:py-24 bg-[#D6DB7C] panel-primary">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
 
       <!-- LINKS -->
       <div class="text-center">
         <img src="assets/profile.jpg"
-          class="w-64 h-64 object-cover rounded-full border-8 border-black profile-photo shadow-lg mx-auto mb-4">
+          class="w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 object-cover rounded-full border-8 border-black profile-photo shadow-lg mx-auto mb-4">
 
         <h1 class="text-3xl font-bold mb-8" data-translate="about.hero.title">
           JONAS DUERINCK
@@ -138,31 +138,31 @@
   </section>
 
   <!-- TIJDLIJN -->
-  <section class="py-20 bg-[#E6E89C] panel-secondary">
+  <section class="py-14 md:py-20 bg-[#E6E89C] panel-secondary timeline-section">
     <div class="max-w-5xl mx-auto px-6">
 
       <div class="relative">
 
         <!-- Verticale lijn -->
-        <div class="absolute left-1/2 top-0 h-full w-1 bg-gray-300 -translate-x-1/2"></div>
+        <div class="absolute left-1/2 top-0 h-full w-1 bg-gray-300 -translate-x-1/2 timeline-line"></div>
 
         <!-- ITEM 1 -->
-        <div class="mb-10 flex justify-between items-center w-full">
+        <div class="mb-10 flex justify-between items-center w-full timeline-item">
           <div class="w-5/12 text-right">
             <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle1">2024 - 2027</h3>
             <p class="text-gray-700" data-translate="about.timeline.title1">Artificial Intelligence & Application Development</p>
             <p class="text-gray-700" data-translate="about.timeline.org1">Thomas More Geel</p>
           </div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
             <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="w-5/12"></div>
         </div>
 
         <!-- ITEM 2 -->
-        <div class="mb-10 flex justify-between items-center w-full">
+        <div class="mb-10 flex justify-between items-center w-full timeline-item">
           <div class="w-5/12"></div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
             <i class="fas fa-briefcase"></i>
           </div>
           <div class="w-5/12">
@@ -173,22 +173,22 @@
         </div>
 
         <!-- ITEM 3 -->
-        <div class="mb-10 flex justify-between items-center w-full">
+        <div class="mb-10 flex justify-between items-center w-full timeline-item">
           <div class="w-5/12 text-right">
             <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle3">2018 - 2024</h3>
             <p class="text-gray-700" data-translate="about.timeline.title3">TSO Boekhouden-Informatica</p>
             <p class="text-gray-700" data-translate="about.timeline.org3">Kardinaal Van Roey Instituut Vorselaar</p>
           </div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
             <i class="fas fa-school"></i>
           </div>
           <div class="w-5/12"></div>
         </div>
 
         <!-- ITEM 4 -->
-        <div class="mb-10 flex justify-between items-center w-full">
+        <div class="mb-10 flex justify-between items-center w-full timeline-item">
           <div class="w-5/12"></div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
             <i class="fas fa-futbol"></i>
           </div>
           <div class="w-5/12">
@@ -199,12 +199,12 @@
         </div>
 
         <!-- ITEM 5 -->
-        <div class="mb-5 flex justify-between items-center w-full">
+        <div class="mb-5 flex justify-between items-center w-full timeline-item">
           <div class="w-5/12 text-right">
             <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle5">2006</h3>
             <p class="text-gray-700" data-translate="about.timeline.title5">Geboren op 11 april 2006</p>
           </div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center">
+          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
             <i class="fas fa-baby"></i>
           </div>
           <div class="w-5/12"></div>
@@ -216,7 +216,7 @@
 
   <!-- Footer -->
   <footer class="bg-black text-white py-6">
-    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center footer-inner">
 
       <p class="text-sm" data-translate="footer.copyright">© 2026 Jonas Duerinck</p>
 
