@@ -22,6 +22,8 @@ const languageSystem = (() => {
       'index.project2.desc': 'Machine learning model dat voorspelt of een auto binnen 30 dagen defect raakt.',
       'index.project3.title': 'Slimme Brievenbus',
       'index.project3.desc': 'IoT-brievenbus met camera en sensoren die automatisch opent en meldingen verstuurt.',
+      'index.project4.title': 'Skill Project',
+      'index.project4.desc': 'Groepsproject: webapplicatie voor voetbalclub met Laravel, inclusief inschrijvingen, agenda en carpool.',
       
       // About.html
       'about.hero.title': 'JONAS DUERINCK',
@@ -87,6 +89,8 @@ const languageSystem = (() => {
       'index.project2.desc': 'Machine learning model that predicts whether a car will break down within 30 days.',
       'index.project3.title': 'Smart Mailbox',
       'index.project3.desc': 'IoT mailbox with camera and sensors that automatically opens and sends notifications.',
+      'index.project4.title': 'Skill Project',
+      'index.project4.desc': 'Group project: web application for football club with Laravel, including registrations, calendar and carpool.',
       
       // About.html
       'about.hero.title': 'JONAS DUERINCK',
