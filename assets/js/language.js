@@ -62,6 +62,9 @@ const languageSystem = (() => {
       'projects.project3.title': 'Slimme Brievenbus',
       'projects.project3.desc': 'IoT-brievenbus die automatisch opent via camera detectie. Met een lichtsensor wordt gecontroleerd of er een pakket aanwezig is.',
       'projects.project3.tech': ['IoT + AI integratie', 'BH1750 lichtsensor', 'Raspberry Pi', 'Orange Pi', 'Camera detectie'],
+      'projects.project4.title': 'Skill Project',
+      'projects.project4.desc': 'Een groepswerk webapplicatie ontwikkeld met Laravel.',
+      'projects.project4.tech': ['Laravel, PHP', 'Groepswerk', 'Webapplicatie'],
       
       // Footer
       'footer.copyright': '© 2026 Jonas Duerinck',
@@ -124,6 +127,9 @@ const languageSystem = (() => {
       'projects.project3.title': 'Smart Mailbox',
       'projects.project3.desc': 'IoT mailbox that automatically opens via camera detection. A light sensor is used to check if a package is present.',
       'projects.project3.tech': ['IoT + AI integration', 'BH1750 light sensor', 'Raspberry Pi', 'Orange Pi', 'Camera detection'],
+      'projects.project4.title': 'Skill Project',
+      'projects.project4.desc': 'A group work web application developed with Laravel.',
+      'projects.project4.tech': ['Laravel, PHP', 'Group work', 'Web application'],
       
       // Footer
       'footer.copyright': '© 2026 Jonas Duerinck',

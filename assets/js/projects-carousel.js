@@ -21,10 +21,13 @@ const images = {
     "assets/project3-4.jpg",
     "assets/project3-5.jpg",
     "assets/project3-6.jpg"
+  ],
+  4: [
+    "assets/project4-1.png"
   ]
 };
 
-const index = { 1: 0, 2: 0, 3: 0 };
+const index = { 1: 0, 2: 0, 3: 0, 4: 0 };
 
 function setSlide(project, newIndex) {
   index[project] = (newIndex + images[project].length) % images[project].length;
