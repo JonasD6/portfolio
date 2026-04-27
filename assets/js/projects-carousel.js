@@ -1,35 +1,35 @@
 const images = {
   1: [
-    "assets/project1-1.png",
-    "assets/project1-2.png",
-    "assets/project1-3.png",
-    "assets/project1-4.png",
-    "assets/project1-5.png",
-    "assets/project1-6.png"
+    "assets/project1/project1-1.png",
+    "assets/project1/project1-2.png",
+    "assets/project1/project1-3.png",
+    "assets/project1/project1-4.png",
+    "assets/project1/project1-5.png",
+    "assets/project1/project1-6.png"
   ],
   2: [
-    "assets/project2-1.png",
-    "assets/project2-2.png",
-    "assets/project2-3.png",
-    "assets/project2-4.png",
-    "assets/project2-5.png"
+    "assets/project2/project2-1.png",
+    "assets/project2/project2-2.png",
+    "assets/project2/project2-3.png",
+    "assets/project2/project2-4.png",
+    "assets/project2/project2-5.png"
   ],
   3: [
-    "assets/project3-1.jpg",
-    "assets/project3-2.jpg",
-    "assets/project3-3.jpg",
-    "assets/project3-4.jpg",
-    "assets/project3-5.jpg",
-    "assets/project3-6.jpg"
+    "assets/project3/project3-1.jpg",
+    "assets/project3/project3-2.jpg",
+    "assets/project3/project3-3.jpg",
+    "assets/project3/project3-4.jpg",
+    "assets/project3/project3-5.jpg",
+    "assets/project3/project3-6.jpg"
   ],
   4: [
-    "assets/project4-1.png",
-    "assets/project4-2.png",
-    "assets/project4-3.png",
-    "assets/project4-4.png",
-    "assets/project4-5.png",
-    "assets/project4-6.png",
-    "assets/project4-7.png"
+    "assets/project4/project4-1.png",
+    "assets/project4/project4-2.png",
+    "assets/project4/project4-3.png",
+    "assets/project4/project4-4.png",
+    "assets/project4/project4-5.png",
+    "assets/project4/project4-6.png",
+    "assets/project4/project4-7.png"
   ]
 };
 
