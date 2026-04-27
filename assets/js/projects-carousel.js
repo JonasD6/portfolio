@@ -23,7 +23,13 @@ const images = {
     "assets/project3-6.jpg"
   ],
   4: [
-    "assets/project4-1.png"
+    "assets/project4-1.png",
+    "assets/project4-2.png",
+    "assets/project4-3.png",
+    "assets/project4-4.png",
+    "assets/project4-5.png",
+    "assets/project4-6.png",
+    "assets/project4-7.png"
   ]
 };
 
