@@ -786,10 +786,6 @@ body.theme-dark .chatbot-form input {
   border-color: #334155;
 }
 
-body.cursor-enabled {
-  cursor: none;
-}
-
 .custom-cursor,
 .custom-cursor-dot {
   position: fixed;
@@ -800,18 +796,28 @@ body.cursor-enabled {
   z-index: 9999;
 }
 
-.custom-cursor {
+/* LIGHT MODE (default) */
+body.cursor-enabled .custom-cursor {
   width: 28px;
   height: 28px;
   border: 2px solid #2f3514;
   border-radius: 50%;
 }
 
-.custom-cursor-dot {
+body.cursor-enabled .custom-cursor-dot {
   width: 6px;
   height: 6px;
   background: #2f3514;
   border-radius: 50%;
+}
+
+/* DARK MODE */
+body.theme-dark.cursor-enabled .custom-cursor {
+  border-color: #ffffff;
+}
+
+body.theme-dark.cursor-enabled .custom-cursor-dot {
+  background: #ffffff;
 }
 
 body.cursor-enabled,
