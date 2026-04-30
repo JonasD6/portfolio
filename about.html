@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Over mij | Portfolio</title>
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -22,13 +19,12 @@
       <h1 class="font-bold">Mijn Portfolio</h1>
       <div class="flex items-center gap-6 nav-controls">
         <div class="space-x-6 nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">Over mij</a>
-          <a href="projects.html">Projecten</a>
+          <a href="index.html" data-translate="nav.home">Home</a>
+          <a href="about.html" data-translate="nav.about">Over mij</a>
+          <a href="projects.html" data-translate="nav.projects">Projecten</a>
         </div>
         <button class="language-toggle" id="langToggle" aria-label="Toggle between Dutch and English">
-          <span id="langText">EN</span>
-          <script>document.getElementById('langText').textContent = (localStorage.getItem('portfolio-language') || 'nl') === 'nl' ? 'NL' : 'EN';</script>
+          <span id="langText">NL</span>
         </button>
         <label class="theme-switch" for="themeToggle" aria-label="Wissel tussen light en dark mode">
           <input type="checkbox" id="themeToggle">
@@ -78,14 +74,15 @@
 
         <p class="text-gray-800 mb-6" data-translate="about.bio.p3">
           In mijn vrije tijd breng ik graag tijd door met mijn vriendin, ga ik regelmatig met mijn vrienden fietsen op
-          de koersfiets
-          en reis ik graag om nieuwe plaatsen te ontdekken.
+          de koersfiets en reis ik graag om nieuwe plaatsen te ontdekken.
         </p>
 
         <!-- CV BUTTON -->
         <div class="flex items-center gap-4 mb-8">
-          <a href="assets/cv.pdf" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black text-white cv-button font-semibold hover:bg-white hover:text-black transition" data-translate="about.cv.button">
-            Cv
+          <a href="assets/cv.pdf" target="_blank"
+            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-black text-white cv-button font-semibold hover:bg-white hover:text-black transition"
+            data-translate="about.cv.button">
+            CV bekijken
           </a>
           <a href="assets/cv.pdf" download class="text-black text-lg" title="Download CV">
             <i class="fas fa-download"></i>
@@ -102,8 +99,8 @@
               <div class="relative w-24 h-24">
                 <svg class="w-full h-full rotate-[-90deg] skill-ring">
                   <circle class="ring-track" cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
-                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none" stroke-dasharray="251"
-                    stroke-dashoffset="25" />
+                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none"
+                    stroke-dasharray="251" stroke-dashoffset="25" />
                 </svg>
               </div>
               <p class="mt-2 text-sm" data-translate="about.skill.teamwork">Teamwork</p>
@@ -114,8 +111,8 @@
               <div class="relative w-24 h-24">
                 <svg class="w-full h-full rotate-[-90deg] skill-ring">
                   <circle class="ring-track" cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
-                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none" stroke-dasharray="251"
-                    stroke-dashoffset="50" />
+                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none"
+                    stroke-dasharray="251" stroke-dashoffset="50" />
                 </svg>
               </div>
               <p class="mt-2 text-sm" data-translate="about.skill.flexibility">Flexibiliteit</p>
@@ -126,10 +123,9 @@
               <div class="relative w-24 h-24">
                 <svg class="w-full h-full rotate-[-90deg] skill-ring">
                   <circle class="ring-track" cx="50%" cy="50%" r="40" stroke="#e5e7eb" stroke-width="8" fill="none" />
-                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none" stroke-dasharray="251"
-                    stroke-dashoffset="30" />
+                  <circle class="ring-value" cx="50%" cy="50%" r="40" stroke="#000000" stroke-width="8" fill="none"
+                    stroke-dasharray="251" stroke-dashoffset="30" />
                 </svg>
-
               </div>
               <p class="mt-2 text-sm" data-translate="about.skill.discipline">Discipline</p>
             </div>
@@ -138,6 +134,7 @@
         </div>
 
       </div>
+    </div>
   </section>
 
   <!-- TIJDLIJN -->
@@ -156,7 +153,7 @@
             <p class="text-gray-700" data-translate="about.timeline.title1">Artificial Intelligence & Application Development</p>
             <p class="text-gray-700" data-translate="about.timeline.org1">Thomas More Geel</p>
           </div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
+          <div class="z-10 timeline-icon w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-graduation-cap"></i>
           </div>
           <div class="w-5/12"></div>
@@ -165,7 +162,7 @@
         <!-- ITEM 2 -->
         <div class="mb-10 flex justify-between items-center w-full timeline-item">
           <div class="w-5/12"></div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
+          <div class="z-10 timeline-icon w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-briefcase"></i>
           </div>
           <div class="w-5/12">
@@ -182,7 +179,7 @@
             <p class="text-gray-700" data-translate="about.timeline.title3">TSO Boekhouden-Informatica</p>
             <p class="text-gray-700" data-translate="about.timeline.org3">Kardinaal Van Roey Instituut Vorselaar</p>
           </div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
+          <div class="z-10 timeline-icon w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-school"></i>
           </div>
           <div class="w-5/12"></div>
@@ -191,7 +188,7 @@
         <!-- ITEM 4 -->
         <div class="mb-10 flex justify-between items-center w-full timeline-item">
           <div class="w-5/12"></div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
+          <div class="z-10 timeline-icon w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-futbol"></i>
           </div>
           <div class="w-5/12">
@@ -207,7 +204,7 @@
             <h3 class="font-bold text-lg" data-translate="about.timeline.subtitle5">2006</h3>
             <p class="text-gray-700" data-translate="about.timeline.title5">Geboren op 11 april 2006</p>
           </div>
-          <div class="z-10 bg-black text-white w-10 h-10 rounded-full flex items-center justify-center timeline-icon">
+          <div class="z-10 timeline-icon w-10 h-10 rounded-full flex items-center justify-center">
             <i class="fas fa-baby"></i>
           </div>
           <div class="w-5/12"></div>
@@ -224,13 +221,10 @@
       <p class="text-sm" data-translate="footer.copyright">© 2026 Jonas Duerinck</p>
 
       <div class="flex gap-4 text-xl">
-        <!-- GitHub -->
         <a href="https://github.com/JonasD6?tab=overview&from=2026-03-01&to=2026-03-30" target="_blank"
           class="hover:text-yellow-400 transition">
           <i class="fab fa-github"></i>
         </a>
-
-        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/jonas-duerinck-3267ba331/" target="_blank"
           class="hover:text-yellow-400 transition">
           <i class="fab fa-linkedin"></i>
@@ -240,9 +234,10 @@
     </div>
   </footer>
 
-  <script src="assets/js/cursor.js"></script>
+  <!-- SCRIPTS: theme eerst, dan language, dan de rest -->
   <script src="assets/js/theme.js"></script>
   <script src="assets/js/language.js"></script>
+  <script src="assets/js/cursor.js"></script>
   <script src="assets/js/chatbot.js"></script>
 </body>
 

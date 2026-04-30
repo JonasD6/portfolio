@@ -19,13 +19,12 @@
       <h1 class="font-bold">Mijn Portfolio</h1>
       <div class="flex items-center gap-6 nav-controls">
         <div class="space-x-6 nav-links">
-          <a href="index.html">Home</a>
-          <a href="about.html">Over mij</a>
-          <a href="projects.html">Projecten</a>
+          <a href="index.html" data-translate="nav.home">Home</a>
+          <a href="about.html" data-translate="nav.about">Over mij</a>
+          <a href="projects.html" data-translate="nav.projects">Projecten</a>
         </div>
         <button class="language-toggle" id="langToggle" aria-label="Toggle between Dutch and English">
-          <span id="langText">EN</span>
-          <script>document.getElementById('langText').textContent = (localStorage.getItem('portfolio-language') || 'nl') === 'nl' ? 'NL' : 'EN';</script>
+          <span id="langText">NL</span>
         </button>
         <label class="theme-switch" for="themeToggle" aria-label="Wissel tussen light en dark mode">
           <input type="checkbox" id="themeToggle">
@@ -40,7 +39,8 @@
   <!-- CONTENT -->
   <main class="flex-grow">
 
-    <h2 class="text-3xl sm:text-4xl font-bold text-center mt-8 md:mt-10 mb-10 md:mb-16" data-translate="projects.title">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mt-8 md:mt-10 mb-10 md:mb-16"
+      data-translate="projects.title">
       Mijn Projecten
     </h2>
 
@@ -51,15 +51,10 @@
         <div class="project-grid">
           <div class="carousel-shell">
             <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
-              <img id="carousel1" src="assets/project1-1.png" class="w-full h-full object-contain" alt="Project screenshot VONQ">
-
-              <button type="button" onclick="prevSlide(1)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">
-                ‹
-              </button>
-
-              <button type="button" onclick="nextSlide(1)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">
-                ›
-              </button>
+              <img id="carousel1" src="assets/project1/project1-1.png" class="w-full h-full object-contain"
+                alt="Project screenshot VONQ">
+              <button type="button" onclick="prevSlide(1)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">‹</button>
+              <button type="button" onclick="nextSlide(1)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">›</button>
             </div>
             <div class="carousel-meta">
               <div id="carouselDots1" class="carousel-dots"></div>
@@ -71,16 +66,12 @@
             <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project1.title">
               <i class="fas fa-shirt"></i> VONQ Webshop
             </h3>
-
             <p class="mb-5" data-translate="projects.project1.desc">
               Een volledige webshop ontwikkeld in Laravel voor mijn eigen kledingmerk VONQ.
-              Gebruikers kunnen producten bekijken, toevoegen aan hun winkelmandje en aankopen doen.
-              De site is niet langer gehost.
             </p>
-
             <ul class="list-disc ml-5 space-y-1.5">
               <li>Laravel, PHP, Tailwind</li>
-              <li>Login & winkelmand systeem</li>
+              <li>Login &amp; winkelmand systeem</li>
               <li>Productbeheer via database</li>
               <li>Admin functies</li>
               <li>Mail functies</li>
@@ -94,15 +85,10 @@
         <div class="project-grid">
           <div class="carousel-shell">
             <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
-              <img id="carousel2" src="assets/project2-1.png" class="w-full h-full object-contain" alt="Project screenshot AI model">
-
-              <button type="button" onclick="prevSlide(2)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">
-                ‹
-              </button>
-
-              <button type="button" onclick="nextSlide(2)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">
-                ›
-              </button>
+              <img id="carousel2" src="assets/project2/project2-1.png" class="w-full h-full object-contain"
+                alt="Project screenshot AI model">
+              <button type="button" onclick="prevSlide(2)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">‹</button>
+              <button type="button" onclick="nextSlide(2)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">›</button>
             </div>
             <div class="carousel-meta">
               <div id="carouselDots2" class="carousel-dots"></div>
@@ -114,13 +100,11 @@
             <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project2.title">
               <i class="fas fa-brain"></i> AI Voorspellingsmodel
             </h3>
-
             <p class="mb-5" data-translate="projects.project2.desc">
               Machine learning model dat voorspelt of een auto binnen 30 dagen defect raakt.
             </p>
-
             <ul class="list-disc ml-5 space-y-1.5">
-              <li>Python & Scikit-learn</li>
+              <li>Python &amp; Scikit-learn</li>
               <li>Random Forest (bagging)</li>
               <li>Confusion matrix</li>
               <li>Clusters</li>
@@ -134,15 +118,10 @@
         <div class="project-grid">
           <div class="carousel-shell">
             <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
-              <img id="carousel3" src="assets/project3-1.jpg" class="w-full h-full object-contain" alt="Project screenshot slimme brievenbus">
-
-              <button type="button" onclick="prevSlide(3)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">
-                ‹
-              </button>
-
-              <button type="button" onclick="nextSlide(3)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">
-                ›
-              </button>
+              <img id="carousel3" src="assets/project3/project3-1.jpg" class="w-full h-full object-contain"
+                alt="Project screenshot slimme brievenbus">
+              <button type="button" onclick="prevSlide(3)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">‹</button>
+              <button type="button" onclick="nextSlide(3)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">›</button>
             </div>
             <div class="carousel-meta">
               <div id="carouselDots3" class="carousel-dots"></div>
@@ -154,19 +133,16 @@
             <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project3.title">
               <i class="fas fa-box"></i> Slimme Brievenbus
             </h3>
-
             <p class="mb-5" data-translate="projects.project3.desc">
               IoT-brievenbus die automatisch opent via camera detectie.
-              Met een lichtsensor wordt gecontroleerd of er een pakket aanwezig is.
             </p>
-
             <ul class="list-disc ml-5 space-y-1.5">
               <li>IoT + AI integratie</li>
               <li>BH1750 lichtsensor</li>
               <li>Raspberry Pi</li>
               <li>Orange Pi</li>
               <li>Camera detectie</li>
-              <li>Notificaties & reclamefilter</li>
+              <li>Notificaties &amp; reclamefilter</li>
             </ul>
           </div>
         </div>
@@ -177,15 +153,10 @@
         <div class="project-grid">
           <div class="carousel-shell">
             <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
-              <img id="carousel4" src="assets/project4-1.png" class="w-full h-full object-contain" alt="Project screenshot Skill Project">
-
-              <button type="button" onclick="prevSlide(4)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">
-                ‹
-              </button>
-
-              <button type="button" onclick="nextSlide(4)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">
-                ›
-              </button>
+              <img id="carousel4" src="assets/project4/project4-1.png" class="w-full h-full object-contain"
+                alt="Project screenshot Skill Project">
+              <button type="button" onclick="prevSlide(4)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">‹</button>
+              <button type="button" onclick="nextSlide(4)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">›</button>
             </div>
             <div class="carousel-meta">
               <div id="carouselDots4" class="carousel-dots"></div>
@@ -195,20 +166,52 @@
 
           <div>
             <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project4.title">
-              <i class="fas fa-users"></i> Skill Project
+              KVV Rauw Skill Project
             </h3>
-
             <p class="mb-5" data-translate="projects.project4.desc">
-              Een groepsproject waarbij een webapplicatie voor een voetbalclub werd ontwikkeld met behulp van Laravel. De applicatie centraliseert verschillende clubactiviteiten zoals inschrijvingen, een agenda, carpoolregeling en het bestellen van clubkledij.
+              Een groepsproject waarbij een webapplicatie voor een voetbalclub werd ontwikkeld met Laravel.
             </p>
-
             <ul class="list-disc ml-5 space-y-1.5">
               <li>Laravel, PHP</li>
               <li>Blade templates</li>
-              <li>Authenticatie & gebruikersbeheer</li>
-              <li>Agenda & inschrijvingssysteem</li>
+              <li>Authenticatie &amp; gebruikersbeheer</li>
+              <li>Agenda &amp; inschrijvingssysteem</li>
               <li>Carpool- en bestelfunctionaliteit</li>
-              <li><a href="https://kvvrauw.davidmaat.be/" target="_blank" class="text-blue-600 hover:text-blue-800 underline">https://kvvrauw.davidmaat.be/</a></li>
+              <li><a href="https://kvvrauw.davidmaat.be/" target="_blank"
+                  class="text-blue-600 hover:text-blue-800 underline">kvvrauw.davidmaat.be</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 5 -->
+      <article class="bg-[#D6DB7C] card-surface project-card p-7 md:p-8 rounded-2xl shadow" data-project-num="5">
+        <div class="project-grid">
+          <div class="carousel-shell">
+            <div class="carousel-stage relative overflow-hidden flex items-center justify-center">
+              <img id="carousel5" src="assets/project5/project5-1.png" class="w-full h-full object-contain"
+                alt="Project screenshot Feest op Tafel">
+              <button type="button" onclick="prevSlide(5)" class="carousel-nav-btn left" aria-label="Vorige afbeelding">‹</button>
+              <button type="button" onclick="nextSlide(5)" class="carousel-nav-btn right" aria-label="Volgende afbeelding">›</button>
+            </div>
+            <div class="carousel-meta">
+              <div id="carouselDots5" class="carousel-dots"></div>
+              <span id="carouselCounter5" class="carousel-counter"></span>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold mb-4 flex items-center gap-3" data-translate="projects.project5.title">
+              Feest op Tafel Skill Project
+            </h3>
+            <p class="mb-5" data-translate="projects.project5.desc">
+              Een UX/UI groepsproject waarbij we een digitale oplossing ontwierpen rond het concept "Feest op Tafel".
+            </p>
+            <ul class="list-disc ml-5 space-y-1.5">
+              <li>Figma</li>
+              <li>UX/UI design</li>
+              <li>Groepswerk</li>
+              <li>Interactief prototype</li>
             </ul>
           </div>
         </div>
@@ -221,21 +224,23 @@
   <footer class="bg-black text-white py-6 mt-20">
     <div class="max-w-6xl mx-auto px-6 flex justify-between items-center footer-inner">
       <p class="text-sm" data-translate="footer.copyright">© 2026 Jonas Duerinck</p>
-
       <div class="flex gap-4 text-xl">
-        <a href="https://github.com/JonasD6?tab=overview&from=2026-03-01&to=2026-03-30" target="_blank">
+        <a href="https://github.com/JonasD6?tab=overview&from=2026-03-01&to=2026-03-30" target="_blank"
+          class="hover:text-yellow-400 transition">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/jonas-duerinck-3267ba331/" target="_blank">
+        <a href="https://www.linkedin.com/in/jonas-duerinck-3267ba331/" target="_blank"
+          class="hover:text-yellow-400 transition">
           <i class="fab fa-linkedin"></i>
         </a>
       </div>
     </div>
   </footer>
 
+  <!-- SCRIPTS: theme eerst, dan language, dan de rest -->
   <script src="assets/js/theme.js"></script>
-  <script src="assets/js/cursor.js"></script>
   <script src="assets/js/language.js"></script>
+  <script src="assets/js/cursor.js"></script>
   <script src="assets/js/projects-carousel.js"></script>
   <script src="assets/js/chatbot.js"></script>
 

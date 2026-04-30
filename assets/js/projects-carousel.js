@@ -30,10 +30,18 @@ const images = {
     "assets/project4/project4-5.png",
     "assets/project4/project4-6.png",
     "assets/project4/project4-7.png"
+  ],
+  5: [
+    "assets/project5/project5-1.png",
+    "assets/project5/project5-2.png",
+    "assets/project5/project5-3.png",
+    "assets/project5/project5-4.png",
+    "assets/project5/project5-5.png",
+    "assets/project5/project5-6.png"
   ]
 };
 
-const index = { 1: 0, 2: 0, 3: 0, 4: 0 };
+const index = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
 
 function setSlide(project, newIndex) {
   index[project] = (newIndex + images[project].length) % images[project].length;
@@ -54,9 +62,7 @@ function updateCarouselMeta(project) {
 
 function initDots(project) {
   const dotsContainer = document.getElementById("carouselDots" + project);
-  if (!dotsContainer) {
-    return;
-  }
+  if (!dotsContainer) return;
 
   dotsContainer.innerHTML = "";
 
@@ -66,18 +72,18 @@ function initDots(project) {
     dot.className = "carousel-dot";
     dot.setAttribute("aria-label", "Ga naar afbeelding " + (i + 1));
     dot.setAttribute("data-project-dot", String(project));
+
     dot.addEventListener("click", function () {
       setSlide(project, i);
     });
+
     dotsContainer.appendChild(dot);
   });
 }
 
 function showSlide(project) {
   const imageEl = document.getElementById("carousel" + project);
-  if (!imageEl) {
-    return;
-  }
+  if (!imageEl) return;
 
   imageEl.src = images[project][index[project]];
   updateCarouselMeta(project);
